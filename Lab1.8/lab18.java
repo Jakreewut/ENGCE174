@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+   public class lab18 {
+     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+        //รับค่า
+        System.out.println("Please enter the total number of digits to accept (N) :");
+        int n = scan.nextInt();
+
+        //array
+        int[] number = new int[n];
+
+        //ป้อนตัวเลขตามจำนวน n
+        System.out.println("Please enter number" + n + "number");
+        for (int i = 0; i < n; i++) {
+            System.out.println("Number" + (i + 1) + ":");
+            number[i] = scan.nextInt(); 
+        }
+
+        //กำหนดตัวแปร ค่าสูงที่สุด ให้เป็นตัวแรกของ array 
+        int maxValue = number[0];
+        
+        //กรำบวนการหาเลขที่มากที่สุดใน array
+        for (int i = 1; i < number.length; i++ ) {
+            //ถ้า เลขนั้น มากกว่า maxvalue(ปัจจุบัน)
+            if (number[i] > maxValue) {
+                //ให้เลขนั้นแทนที่ maxValue(ปัจจุบัน)
+                maxValue = number[i];
+            }
+        }
+
+        //แสดงผล
+        System.out.println("\n Result of the maximum is :");
+        System.out.println(maxValue);
+
+        //scanner close
+        scan.close();
+     }
+    
+}
