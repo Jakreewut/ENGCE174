@@ -11,21 +11,16 @@ import java.util.Scanner;
         //array
         int[] number = new int[n];
 
-        //ป้อนตัวเลขตามจำนวน n
         System.out.println("Please enter number" + n + "number");
         for (int i = 0; i < n; i++) {
             System.out.println("Number" + (i + 1) + ":");
             number[i] = scan.nextInt(); 
         }
 
-        //กำหนดตัวแปร ค่าสูงที่สุด ให้เป็นตัวแรกของ array 
         int maxValue = number[0];
         
-        //กรำบวนการหาเลขที่มากที่สุดใน array
         for (int i = 1; i < number.length; i++ ) {
-            //ถ้า เลขนั้น มากกว่า maxvalue(ปัจจุบัน)
             if (number[i] > maxValue) {
-                //ให้เลขนั้นแทนที่ maxValue(ปัจจุบัน)
                 maxValue = number[i];
             }
         }
@@ -34,7 +29,6 @@ import java.util.Scanner;
         System.out.println("\n Result of the maximum is :");
         System.out.println(maxValue);
 
-        //scanner close
         scan.close();
      }
     

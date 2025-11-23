@@ -4,7 +4,7 @@ import java.util.Scanner;
      public static void main(String[] args) {
          Scanner scanner = new Scanner(System.in);
 
-         //กำหนดครั้งแรก sum = 0
+         //กำหนดครั้งแรก
          int sum =0;
 
          //รับค่า n
@@ -13,11 +13,9 @@ import java.util.Scanner;
  
          System.out.println("Please enter Numer" + n + "Number");
          
-         //ป้อนตัวเลขตามจำนวนครั้ง
          for (int i = 0; i < n; i++) {
             int number = scanner.nextInt();
 
-            //บวกเลขตามจำนวนครั้ง
             sum += number;
          }
 
@@ -25,7 +23,6 @@ import java.util.Scanner;
          System.out.println("Result :");
          System.out.println(sum);
 
-         //scanner close
          scanner.close();
      }
 }

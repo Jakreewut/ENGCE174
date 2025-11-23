@@ -6,10 +6,9 @@ public class lab14 {
 
         //รับค่าคะแนน
         System.out.println("Enter score :");
-        //ตัวแปรเก็บคะแนน
+
         int s = scanner.nextInt();
 
-        //ตัวแปรเก็บเกรด
         String g = "F";
 
         //คำนวณเกรด
@@ -29,7 +28,6 @@ public class lab14 {
         System.out.println("You grade :");
         System.out.println(g);
 
-        //scanner close
         scanner.close();
     }
 }

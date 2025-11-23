@@ -10,14 +10,12 @@ import java.util.Scanner;
 
          System.out.println("Multiplier :" + mp);
 
-         //คำนวณ & แสดงผล
+         //คำนวณ แสดงผล
          for (int i = 1; i <= 12; i++) {
             int result = mp * i;
 
             System.out.println(mp + "x" + i + "=" + result );
          }
-
-         //scanner close
          scanner.close();
      }
 }
