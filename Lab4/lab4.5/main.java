@@ -53,5 +53,8 @@ public class main {
 
         System.out.println("================================");
         color.displayRGB();
+
+        scan.close();
     }
+
 }
